@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+    
+        body {
+          background: black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+        }
+    
+        .name {
+          position: relative;
+          text-align: center;
+        }
+    
+        img {
+          width: 100%;
+          display: block;
+          margin: 0 auto;
+        }
+    
+        .name input {
+          width: 20%; 
+          height: 30px;
+          padding: 10px;
+          border-radius: 10px;
+          position: absolute;
+          top: 40%;
+          left: 83.5%;
+          transform: translate(-50%, -50%);
+          background: black;
+          color: white;
+          border: 0;
+          text-align: center;
+        }
+    
+        @media (max-width: 768px) {
+          .name input {
+            width: 15%;
+            height: 20px;
+            top: 45%;
+          }
+        }
+      </style>
+</head>
+<body>
+    <div class="name">
+        <img src="main.png">
+    <input type="text" placeholder="name">
+</div>
+</body>
+</html>
